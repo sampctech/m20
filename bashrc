@@ -124,6 +124,18 @@ alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 #know what you do in these files
 alias nlightdm="sudo nano /etc/lightdm/lightdm.conf"
 
+#git clone my repos
+alias geta='git clone https://github.com/sampctech/a'
+alias getac='git clone https://github.com/sampctech/arccin'
+alias getarcob='git clone https://github.com/sampctech/arcob'
+alias getrenamer='git clone https://github.com/sampctech/ab-renamer'
+alias getg='git clone https://github.com/sampctech/g'
+alias getgit='git clone https://github.com/sampctech/git'
+alias getgith='git clone https://github.com/sampctech/githu'
+alias getm20='git clone https://github.com/sampctech/m20'
+alias getorg='git clone https://github.com/sampctech/org'
+alias getsets='git clone https://github.com/sampctech/sets'
+
 #shutdown or reboot
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
