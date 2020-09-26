@@ -10,6 +10,7 @@ esac
 
 # Aliases for software managment
 # apt
+alias autoremove='sudo apt autoremove'
 alias install='sudo apt install -y'
 alias upgrade='sudo apt upgrade -y'
 alias fullup='sudo apt dist-upgrade -y'
