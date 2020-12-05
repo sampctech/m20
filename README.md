@@ -1,2 +1,2 @@
 # m20
-my mint stuff
+My Linux Mint 20 Tweaks & helper stuff
