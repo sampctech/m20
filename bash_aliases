@@ -1,31 +1,35 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
-# If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
-
 # Aliases for software managment
 # apt
 alias autoremove='sudo apt autoremove'
 alias install='sudo apt install -y'
-alias upgrade='sudo apt upgrade -y'
+alias upg='sudo apt upgrade -y'
 alias fullup='sudo apt dist-upgrade -y'
-alias update='sudo apt update -y'
-alias adrepo='sudo apt add-repository -y'
-alias aclean='sudo apt autoclean -y'
-alias clean='sudo apt clean -y'
+alias upd='sudo apt update -y'
+alias arepo='sudo apt add-repository -y'
+alias acln='sudo apt autoclean -y'
+alias cln='sudo apt clean -y'
 alias chk='sudo apt check -y'
 alias deb='sudo apt deb -y'
-alias list='sudo apt list'
+alias alst='sudo apt list'
+alias uninstall='sudo apt-get --purge remove'
 alias purge='sudo apt remove --purge -y'
 alias ver='sudo apt version'
 
-#hardware info --short
-alias hw="hwinfo --short"
+
+#hardware info
+alias hw="hwinfo"
+alias hwdn="hwinfo --debug N"
+alias hwh="hwinfo --help"
+alias hwlf="hwinfo --log FILE"
+alias hwm="hwinfo --map"
+alias hwmv="hwinfo --map --verbose"
+alias hwo="hwinfo --only DEVNAME"
+alias hwr="hwinfo --listmd"
+alias hws="hwinfo --short"
+alias hwsu="hwinfo --show-config UDI"
+alias hwv="hwinfo --version"
+
+
 
 #quickly kill conkies
 alias kc='killall conky'
@@ -46,15 +50,18 @@ alias getm20='git clone https://github.com/sampctech/m20'
 alias getorg='git clone https://github.com/sampctech/org'
 alias getsets='git clone https://github.com/sampctech/sets'
 
+#other
+alias ch7='sudo chmod +777'
+alias chm='sudo chmod'
+alias detar='sudo tar -xzvf'
+alias cretar='sudo tar -czvf'
+
 #shutdown or reboot
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+#Refresh .bashrc after bash updates
+#alias RB='source .bashrc'
+#alias rb='. ~/.bashrc'
+alias rba='. ~/.bash_aliases'
 fi
