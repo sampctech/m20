@@ -15,7 +15,6 @@ alias uninstall='sudo apt-get --purge remove'
 alias purge='sudo apt remove --purge -y'
 alias ver='sudo apt version'
 
-
 #hardware info
 alias hw="hwinfo"
 alias hwdn="hwinfo --debug N"
@@ -29,14 +28,12 @@ alias hws="hwinfo --short"
 alias hwsu="hwinfo --show-config UDI"
 alias hwv="hwinfo --version"
 
-
-
 #quickly kill conkies
 alias kc='killall conky'
 
 #nano for important configuration files
 #know what you do in these files
-alias nlightdm="sudo nano /etc/lightdm/lightdm.conf"
+alias nldm="sudo nano /etc/lightdm/lightdm.conf"
 
 #git clone my repos
 alias geta='git clone https://github.com/sampctech/a'
