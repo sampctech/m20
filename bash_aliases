@@ -1,10 +1,10 @@
 # Aliases for software managment
 # apt
-alias autoremove='sudo apt autoremove'
+alias armv='sudo apt autoremove'
 alias install='sudo apt install -y'
+alias upd='sudo apt update -y'
 alias upg='sudo apt upgrade -y'
 alias fullup='sudo apt dist-upgrade -y'
-alias upd='sudo apt update -y'
 alias arepo='sudo apt add-repository -y'
 alias acln='sudo apt autoclean -y'
 alias cln='sudo apt clean -y'
@@ -14,6 +14,8 @@ alias alst='sudo apt list'
 alias uninstall='sudo apt-get --purge remove'
 alias purge='sudo apt remove --purge -y'
 alias ver='sudo apt version'
+alias updg='sudo apt upgrade -y && sudo apt upgrade -y'
+alias ugpl='sudo apt list --upgradable'
 
 #hardware info
 alias hw="hwinfo"
@@ -27,6 +29,8 @@ alias hwr="hwinfo --listmd"
 alias hws="hwinfo --short"
 alias hwsu="hwinfo --show-config UDI"
 alias hwv="hwinfo --version"
+
+
 
 #quickly kill conkies
 alias kc='killall conky'
@@ -53,40 +57,13 @@ alias chm='sudo chmod'
 alias detar='sudo tar -xzvf'
 alias cretar='sudo tar -czvf'
 
+
 #shutdown or reboot
-alias ssn="sudo shutdown now"
+alias sdn="sudo shutdown now"
 alias sr="sudo reboot"
+
 
 #Refresh .bashrc after bash updates
 #alias RB='source .bashrc'
 #alias rb='. ~/.bashrc'
 alias rba='. ~/.bash_aliases'
-
-# # ex = EXtractor for all kinds of archives
-# # usage: ex <file>
-ex ()
-{
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *.deb)       ar x $1      ;;
-      *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   unzstd $1    ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
-}
-
-fi
