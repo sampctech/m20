@@ -11,3 +11,17 @@ archiver
 Themes
 Cinnamox Rhino
 Numix-Cinnamon-Transparent
+
+
+
+
+
+Media Players
+https://en.wikipedia.org/wiki/Comparison_of_free_software_for_audio#Players
+
+Quod Libet
+https://quodlibet.readthedocs.io/en/latest/index.html
+
+sudo add-apt-repository ppa:lazka/ppa
+sudo apt-get update
+sudo apt-get install quodlibet
