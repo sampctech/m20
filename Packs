@@ -26,3 +26,10 @@ https://quodlibet.readthedocs.io/en/latest/index.html
 sudo add-apt-repository ppa:lazka/ppa
 sudo apt-get update
 sudo apt-get install quodlibet
+
+
+
+CDemu Virtual CD/DVD
+sudo apt add-repository ppa:cdemu/ppa
+sudo apt-get update
+sudo apt-get install gcdemu cdemu-client
