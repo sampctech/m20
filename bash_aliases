@@ -1,9 +1,17 @@
 # Aliases for software managment
+# add the following into .bashrc
+#
+#if [ -f ~/.bash_aliases ]; then
+#. ~/.bash_aliases
+#fi
+#
+#this will allow this file to then be used
 # apt
 alias armv='sudo apt autoremove'
 alias install='sudo apt install -y'
 alias upd='sudo apt update -y'
 alias upg='sudo apt upgrade -y'
+alias fupg='sudo apt update && sudo apt upgrade'
 alias fullup='sudo apt dist-upgrade -y'
 alias arepo='sudo apt add-repository -y'
 alias acln='sudo apt autoclean -y'
@@ -29,8 +37,6 @@ alias hwr="hwinfo --listmd"
 alias hws="hwinfo --short"
 alias hwsu="hwinfo --show-config UDI"
 alias hwv="hwinfo --version"
-
-
 
 #quickly kill conkies
 alias kc='killall conky'
@@ -59,11 +65,33 @@ alias cretar='sudo tar -czvf'
 
 
 #shutdown or reboot
-alias sdn="sudo shutdown now"
+alias sdn="sudo shutdown -h now"
 alias sr="sudo reboot"
 
 
 #Refresh .bashrc after bash updates
 #alias RB='source .bashrc'
 #alias rb='. ~/.bashrc'
+alias rlb='sudo exec bash'
+alias rla='sudo source ~/.bash_aliases'
 alias rba='. ~/.bash_aliases'
+
+#some common shortcuts & typo fixes
+alias cd..='cd ..'
+#alias cp='cp -i'
+#alias d='ls'
+#alias df='df -h -x supermount'
+#alias du='du -h'
+#alias egrep='egrep --color'
+#alias fgrep='fgrep --color'
+#alias grep='grep --color'
+#alias l='ls'
+#alias la='ls -a'
+#alias ll='ls -l'
+#alias ls='ls -F --color=auto'
+#alias lsd='ls -d */'
+alias md='mkdir'
+#alias mv='mv -i'
+#alias p='cd -'
+alias rd='rmdir'
+#alias rm='rm -i'
